@@ -1,0 +1,24 @@
+{
+  "name": "currency-conveter-api",
+  "version": "1.0.0",
+  "description": "currency",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.2.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "server": "nodemon src/server.js",
+    "client": "npm start --prefix currencies-converter",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sandeep srivastava",
+  "license": "ISC"
+}
